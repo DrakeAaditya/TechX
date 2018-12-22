@@ -1,27 +1,15 @@
 <?php
 //Step1
- $db = mysqli_connect('localhost','root','aaditya','addy')
- or die('Error connecting to MySQL server.');
+include 'getpostdb.php';
 
 $email =  $_POST['Email'];
 $pass = $_POST['Pwd'];
 
-$sql = "SELECT * FROM TechX WHERE Email='$email' and Password='$pass'";
-if($result = mysqli_query($db, $sql)){
-    if(mysqli_num_rows($result) > 0){ ?>
-    Click 
-    <a href="pages/blog.html">HERE</a> To get Redirected to BLOG page
-    <!--/*	$sql1 = "SELECT FName FROM TechX WHERE Email='$email'";
-    	$result1 = mysqli_query($db, $sql);
-    	while($row=mysql_fetch_array($sql1))
-    	{
-    	$name1=$row['Fname'];
-}
-echo "name=$name1";
-*/-->
-<?php
-
-} else{
+$sql = "SELECT * FROM signup WHERE Username='$email' and Password='$pass'";
+if($result = mysqli_query($conn, $sql)){
+    if(mysqli_num_rows($result) == 1){
+        header("refresh:0, pages/blog.html");
+    } else{
         echo "No records matching your query were found.";
     }
 } else{

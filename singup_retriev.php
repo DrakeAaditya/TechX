@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "aaditya";
-$dbname = "addy";
+include 'getpostdb.php';
 
 
 
@@ -11,19 +8,10 @@ $lname = $_POST['L_Name'];
 $pwd = $_POST['Pwd'];
 $email = $_POST['Email'];
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-$sql = "INSERT INTO TechX (FName, LName, Email, Password)
+$sql = "INSERT INTO signup (FirstName, LastName, Username, Password)
 VALUES ('$fname','$lname','$email', '$pwd')";
-if (mysqli_query($conn, $sql)) { ?>
-	Account Created Successfully 
-     Click 
-    <a href="pages/blog.html">HERE </a> To get Redirected to BLOG page
-<?php
+if (mysqli_query($conn, $sql)) {
+	header("refresh:0, pages/blog.html");
 } else {
     echo "Account Already Exists";
 }

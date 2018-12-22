@@ -5,10 +5,8 @@
   <title>Sign-Up/Login Form</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-  
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body background="qq.jpg">
@@ -25,9 +23,11 @@
       
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="pages/blog.html">Log In</a></li>
+        <li class="tab inactive"><a href="#login">Log In</a></li>
       </ul>
       
+
+      <!-- SingUp Start -->
       <div class="tab-content">
         <div id="signup">   
           <h1>Sign Up for Free</h1>
@@ -69,6 +69,10 @@
           </form>
 
         </div>
+
+        <!-- SingUp End -->
+
+        <!-- Login Start -->
         
         <div id="login">   
           <h1>Welcome Back!</h1>
@@ -91,7 +95,9 @@
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
           
-          <button class="button button-block"/>Log In</button>
+          <button class="button button-block">Log In</button>
+
+          <!-- Login End -->
           
           </form>
 
