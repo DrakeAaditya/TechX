@@ -1,7 +1,7 @@
 <?php
 session_start();
   if (!$_SESSION['session']) {
-    header("refresh:0, ../joinup.php");
+    header("refresh:0, ../joinus.php");
   }
 ?>
 
