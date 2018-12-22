@@ -11,7 +11,7 @@ $email = $_POST['Email'];
 $sql = "INSERT INTO signup (FirstName, LastName, Username, Password)
 VALUES ('$fname','$lname','$email', '$pwd')";
 if (mysqli_query($conn, $sql)) {
-	header("refresh:0, pages/blog.html");
+	header("refresh:0, pages/blog.php");
 } else {
     echo "Account Already Exists";
 }

@@ -1,3 +1,13 @@
+<?php
+session_start();
+  if ($_SESSION['session']) {
+    echo "Already Logged In, Redirecting to Home Page in 5 seconds";
+    header("refresh: 5, /");
+    exit;
+  }
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +15,6 @@
   <title>Sign-Up/Login Form</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,7 +25,7 @@
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
       <br>
-      <h1><a href="index.html">TechX</a></h1>
+      <h1><a href="/">TechX</a></h1>
     </div>
 
   <div class="form">

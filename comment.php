@@ -20,7 +20,7 @@ if (!$conn) {
 $sql = "INSERT INTO comment (Name, Email, Website, Comment) VALUES ('$name','$email','$web','$com')";
 if (mysqli_query($conn, $sql)) { ?>
 Comment Recieved <br>
-   Click <a href="pages/blog.html">Here</a> To get REDIRECTED To Blog page
+   Click <a href="pages/blog.php">Here</a> To get REDIRECTED To Blog page
  <?php } else {
     echo "Comment Already Exists";
 }

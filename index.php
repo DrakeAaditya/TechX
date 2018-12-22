@@ -23,9 +23,9 @@
     </div>
     <div class="fl_right">
       <ul>
-        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href=""><i class="fa fa-lg fa-home"></i></a></li>
        <!-- <li><a href="#">Login</a></li> -->
-        <li><a href="joinus.html">Join Us</a></li> 
+        <li><a href="logout.php">Log Out </a></li> 
       </ul>
     </div>
     <!-- ################################################################################################ -->
@@ -38,14 +38,14 @@
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="index.html">TechX</a></h1>
+      <h1><a href="">TechX</a></h1>
       <p>Saying A Lot In A Little </p>
     </div>
     <div id="quickinfo" class="fl_right">
       <ul class="nospace inline">
         <li><strong>Mobile:</strong><br>
           +91 (123) 456 7890</li>
-        <li><strong>Landline:<a href="pages/blog.html">-</a></strong><br>
+        <li><strong>Landline:<a href="pages/blog.php">-</a></strong><br>
           +91 (123) 456 7890</li>
       </ul>
     </div>
@@ -54,10 +54,10 @@
   <nav id="mainav" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <ul class="clear">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="">Home</a></li>
      <!-- <li class="active"><a class="drop" href="#">Pages</a>
         <ul>
-          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li class="active"><a href="gallery.php">Gallery</a></li>
           <li><a href="full-width.html">Full Width</a></li>
           <li><a href="sidebar-left.html">Sidebar Left</a></li>
           <li><a href="sidebar-right.html">Sidebar Right</a></li>
@@ -77,10 +77,17 @@
           <li><a href="#">Level 2</a></li>
         </ul>
       </li> -->
-      <li><a href="pages/gallery.html">Gallery</a></li>
-      <li><a href="joinus.html">Blog</a></li>
+      <li><a href="pages/gallery.php">Gallery</a></li>
+      <li><a href="<?php 
+        session_start();
+        if ($_SESSION['session'] == "TRUE") {
+          echo "pages/blog.php";
+        } else {
+          echo "joinus.php";
+        }      
+      ?>">Blog</a></li>
       <li><a href="" id="hulk">Contact Us</a></li>
-      <li><a href="joinus.html">Join Us</a></li>
+      <li><a href="joinus.php">Join Us</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
@@ -134,7 +141,7 @@
           </li>
         </ul>
       </div>
-      <div class="one_half"><img class="inspace-10 borderedbox" src="images/demo/1.jpg" alt=""></div>
+      <div class="one_half"><img class="inspace-10 borderedbox" src="images/demo/backgrounds/03.jpg" alt=""></div>
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -229,10 +236,10 @@
       <p>Development is closely related with technology. The stage of development the human being has arrived could have been possible without the advancement in technology. The radical change and advancement in the economy, as we observe today, is the result of the modern technology.</p>
     </figcaption>
     <ul class="nospace group">
-      <li class="one_quarter first"><img src="image001.jpg" alt=""></li>
-      <li class="one_quarter"><img src="image002.jpg" alt=""></li>
-      <li class="one_quarter"><img src="image003.jpg" alt=""></li>
-      <li class="one_quarter"><img src="image004.jpg" alt=""></li>
+      <li class="one_quarter first"><img src="images/image001.jpg" alt=""></li>
+      <li class="one_quarter"><img src="images/image002.jpg" alt=""></li>
+      <li class="one_quarter"><img src="images/image003.jpg" alt=""></li>
+      <li class="one_quarter"><img src="images/image004.jpg" alt=""></li>
     </ul>
     <!-- ################################################################################################ -->
   </figure>
@@ -270,7 +277,7 @@
     </div>
     <div class="one_third">
       <h6 class="heading">Infinite USB Connector</h6>
-      <figure><img class="borderedbox inspace-10 btmspace-15" src="stack.jpg" alt="">
+      <figure><img class="borderedbox inspace-10 btmspace-15" src="images/stack.jpg" alt="">
         <figcaption>
           <h6 class="nospace font-x1">Stackable USB Wires</h6>
         </figcaption>
