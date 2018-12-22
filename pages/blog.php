@@ -1,3 +1,10 @@
+<?php
+session_start();
+  if (!$_SESSION['session']) {
+    header("refresh:0, ../joinup.php");
+  }
+?>
+
 <!DOCTYPE html>
 <!--
 Template Name: Interlingua
