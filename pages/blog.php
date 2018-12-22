@@ -1,3 +1,10 @@
+<?php
+session_start();
+  if (!$_SESSION['session']) {
+    header("refresh:0, ../joinus.php");
+  }
+?>
+
 <!DOCTYPE html>
 <!--
 Template Name: Interlingua

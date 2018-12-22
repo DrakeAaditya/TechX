@@ -45,7 +45,7 @@
       <ul class="nospace inline">
         <li><strong>Mobile:</strong><br>
           +91 (123) 456 7890</li>
-        <li><strong>Landline:<a href="pages/blog.php">-</a></strong><br>
+        <li><strong>Landline:</strong><br>
           +91 (123) 456 7890</li>
       </ul>
     </div>
