@@ -28,9 +28,9 @@ Licence URI: http://www.os-templates.com/template-terms
     </div>
     <div class="fl_right">
       <ul>
-        <li><a href="/index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="/"><i class="fa fa-lg fa-home"></i></a></li>
         <!-- <li><a href="#">Login</a></li> -->
-        <li><a href="/joinus.html">Join Us</a></li>
+        <li><a href="../joinus.php">Join Us</a></li>
       </ul>
     </div>
     <!-- ################################################################################################ -->
@@ -43,7 +43,7 @@ Licence URI: http://www.os-templates.com/template-terms
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="/index.html">TechX</a></h1>
+      <h1><a href="/">TechX</a></h1>
       <p>saying a lot in a little</p>
     </div>
     <div id="quickinfo" class="fl_right">
@@ -59,10 +59,10 @@ Licence URI: http://www.os-templates.com/template-terms
   <nav id="mainav" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <ul class="clear">
-      <li><a href="/index.html">Home</a></li>
+      <li><a href="/">Home</a></li>
      <!-- <li class="active"><a class="drop" href="#">Pages</a>
         <ul>
-          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li class="active"><a href="gallery.php">Gallery</a></li>
           <li><a href="full-width.html">Full Width</a></li>
           <li><a href="sidebar-left.html">Sidebar Left</a></li>
           <li><a href="sidebar-right.html">Sidebar Right</a></li>
@@ -82,10 +82,10 @@ Licence URI: http://www.os-templates.com/template-terms
           <li><a href="#">Level 2</a></li>
         </ul>
       </li> -->
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.php">Gallery</a></li>
+      <li><a href="blog.php">Blog</a></li>
       <li><a href="" id="hulk">Contact Us</a></li>
-      <li><a href="/joinus.html">Join Us</a></li>
+      <li><a href="../joinus.php">Join Us</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
@@ -340,7 +340,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="/index.html">TechX</a></p>
+    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="/">TechX</a></p>
     <!-- ################################################################################################ -->
   </div>
 </div>
